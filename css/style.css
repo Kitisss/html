@@ -11,26 +11,62 @@ body{
     align-items: center;
 }
 .container{
+    align-items: center;
     width: 1151px;
     margin:0 auto;
     display: flex;
 }
 .nav{
-    
+    font-weight: 400;
+    font-size: 12;
+    color: #2A2D46 ;
+}
+.nav1{
+    margin-right: 32px;
+    color: #2A2D46 ;
+    text-decoration: none;
 }
 .logo{
     margin-right: 40px;
 }
 .logo__img{
+    display: block;
     margin-right: 10px;
 }
 .button{
 
 }
 .phone{
+    margin-left: 29px;
+    font-weight: bold;
+    margin-right: 34px;
 
 }
 
 .money{
+    align-items: center;
     margin-left: auto;
+    display: flex;
+}
+.prof-skills__title{
+    color: #3145FF ;
+    font-weight: bold;
+    font-size: 12;
+}
+.prof-skills__desc{
+    color: #2A2D46 ;
+    font-size: 12;
+    font-weight: 300; 
+}
+.money__title{
+    margin-left: 15px;
+    color: #2A2D46 ;
+    font-size: 12;
+    font-weight: bold;
+    margin-right: 11px;
+    
+}
+.triangle__img{
+    margin-top: -2px;
+    display: block;
 }
