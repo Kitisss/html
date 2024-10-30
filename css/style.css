@@ -10,58 +10,72 @@ body{
     height: 84px;
     align-items: center;
 }
+.logo{
+    margin-right:40px;
+    font-size:12px;
+    font-weight:700;
+    align-items: center
+}
 .container{
-    align-items: center;
     width: 1151px;
     margin:0 auto;
     display: flex;
+    align-items: center;
 }
 .nav{
     font-weight: 400;
-    font-size: 12;
+    font-size: 12px;
     color: #2A2D46 ;
+    align-items: center;
 }
 .nav1{
     margin-right: 32px;
     color: #2A2D46 ;
     text-decoration: none;
 }
-.logo{
-    margin-right: 40px;
+.nav1:lat-child{
+    margin-right: 0px;
+    align-items: center;
+    
 }
+
 .logo__img{
     display: block;
     margin-right: 10px;
 }
 .button{
+    font-size: 11px; 
 
 }
 .phone{
-    margin-left: 29px;
+    margin-left: 61px;
     font-weight: bold;
     margin-right: 34px;
+    font-size: 13px;
 
 }
 
 .money{
     align-items: center;
     margin-left: auto;
+    width: 22px;
+    height: 23px;
     display: flex;
 }
 .prof-skills__title{
     color: #3145FF ;
     font-weight: bold;
-    font-size: 12;
+    font-size: 12px;
 }
 .prof-skills__desc{
     color: #2A2D46 ;
-    font-size: 12;
+    font-size: 12px;
     font-weight: 300; 
 }
 .money__title{
     margin-left: 15px;
     color: #2A2D46 ;
-    font-size: 12;
+    font-size: 12px;
     font-weight: bold;
     margin-right: 11px;
     
