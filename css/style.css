@@ -28,24 +28,35 @@ body{
     color: #2A2D46 ;
     align-items: center;
 }
-.nav1{
+.nav-link{
     margin-right: 32px;
     color: #2A2D46 ;
     text-decoration: none;
 }
-.nav1:lat-child{
+.nav-link:lat-child{
     margin-right: 0px;
     align-items: center;
     
 }
-
+.nav-link:hover{
+    color: #3145FF ; 
+}
 .logo__img{
     display: block;
     margin-right: 10px;
 }
 .button{
-    font-size: 11px; 
+    border: 1px solid #EB2D66;
+    padding: 6px 13px 6px;
+    margin-right: 69px;
+    text-decoration: none;
 
+}
+.text_button{
+    font-size: 11px; 
+    font-weight: bold;
+    color: #EB2D66;
+    text-decoration: none;
 }
 .phone{
     margin-left: 61px;
@@ -57,7 +68,7 @@ body{
 
 .money{
     align-items: center;
-    margin-left: auto;
+    
     width: 22px;
     height: 23px;
     display: flex;
@@ -84,6 +95,7 @@ body{
     margin-top: -2px;
     display: block;
 }
+/*Главная страница*/
 .main{
 
 }
@@ -92,13 +104,13 @@ body{
     margin:0 auto;
     display: flex;
     justify-content: space-between;
-    padding-top: 21;
-    padding-bottom: 96;
+    padding-top: 93px;
+    padding-bottom: 96px;
     align-items: center;
 }
 .content-main{
     width: 544px;
-    margin-left: 80px;
+    margin-left: 92px;
 }
 .image-main{
 
@@ -116,7 +128,20 @@ body{
     font-weight: 400;
     color: #2A2D46 ;
     line-height: 1.42;
+    margin-bottom: 25px;
 }
 .button-main{
+    display: inline-block;
+    height: 63px;
+    background-color: #EB2D66;
+    padding: 20px 42px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-decoration: none;
+    box-shadow: 0px 7px 35px  3px #EE5583;
 
+}
+.button-main:hover{
+    opacity: 0.8;
 }
