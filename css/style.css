@@ -1,8 +1,9 @@
 *,*::before, *::after{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
-    margin: 0;
     font-family: "Montserrat", sans-serif;
 }
 .header{
@@ -107,7 +108,6 @@ body{
     padding-top: 93px;
     padding-bottom: 96px;
     align-items: center;
-    align-items: center;
 }
 .content-main{
     width: 544px;
@@ -127,12 +127,53 @@ body{
     pointer-events: none; 
 }
 .cross-image{
-    position: absolute;
-    top: 80%;
-    left: -30%; /* Смещение влево */
-    transform: translateY(-50%); /* Вертикальное центрирование */
-    width: 100%; /* Ширина картинки */
-    height: auto; /* Автоматическая высота */
+    /*position: absolute;*/
+    /*top: 80%;*/
+    /*left: -40%; */
+    /*transform: translateY(-50%); */
+    width: 100%; 
+    height: auto; 
+}
+.sneakers_info{
+    display: flex;
+    
+}
+.textonimage {
+    align-items: center; /* Вертикальное выравнивание элементов */
+    margin-top: 20px; /* Добавлено расстояние от изображения */
+}
+.textonimage h2{
+    padding-top: 20px;
+    top: 55px;
+    left: 390px;
+    /*transform: translate(-50%, -50%); */
+    color: white; 
+    font-size: 17px; 
+    text-align:left; 
+    font-weight: bold;
+    
+}
+.textonimage h3 {
+    padding-top: 6px;
+    color: white; 
+    font-size: 12px;
+    font-weight: 400;
+}
+.textonimage h4 {
+    padding-top: 6px;
+    color: white; 
+    font-size: 12px;
+    font-weight:bold;
+}
+.Rectangle{
+    
+    top: 150px;
+    left: 382px;
+    transform: translateY(-50%);
+}
+.main-image__slides{
+    margin-top: 185px;
+    margin-left: 84px;
 }
 .main-text{
     
@@ -164,3 +205,170 @@ body{
 .button-main:hover{
     opacity: 0.8;
 }
+/*2PART*/
+.goods{
+    margin-top: 96px;
+    width:1292px;
+}
+.goods-header{
+
+    margin-left: 142px;
+    display: flex;
+    height: 18px;
+    align-items: center;
+    
+    width:1292px;
+    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 82px;
+   
+}
+.goods-name{
+    margin-right: 42px;
+    font-weight:900;
+    font-size: 25px;
+    color: #2A2D46 ;
+    
+}
+.goods-nav{
+    font-weight: 400;
+    font-size: 12px;
+    color: #2A2D46 ;
+    align-items: center;
+    
+}
+.goods-nav__link{
+    margin-right: 32px;
+    color: #2A2D46 ;
+    font-size: 12px;
+    text-decoration: none;
+}
+.goods-nav__link:hover{
+    color: #3145FF;
+}
+.goods-header__swipe{
+    width: 23px; height: 46px;
+    margin-top: 208px;
+    margin-left: 308px;
+    margin-right: 20px;
+}
+
+.goods-carts{
+    /*margin-left:454px;*/
+    
+    vertical-align: middle;
+    display: flex;
+    text-align: center;
+    gap:30px;
+    justify-content: space-around;
+    
+}
+.goods-carts h1{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.goods-carts h2{
+    font-size: 12px;
+    font-weight:400;
+}
+.goods-carts h3{
+    padding-top: 34px;
+    font-size: 14px;
+    font-weight:400;
+    text-decoration: line-through;
+}
+.goods-carts__ball-treals{
+    
+    display: flex;
+    align-items: center;
+}
+.goods-carts__ball-treals h6{
+    margin-right: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #3145FF;
+}
+.goods-carts__TYPE{
+    padding: 20px 19px 30px;
+    margin-right: 30px;
+    border-bottom: 2px solid rgba(25, 38, 207, 0.404);
+    width: 270px;
+    height: 417px;
+}
+.information{
+    display: flex;
+    width: 1167px;
+    margin: 0 auto;
+    justify-content:space-between;
+}
+/*./img/photobascket.png"*/
+.information__new-sneakers{
+    background-image: url(../img/photobascket.png);
+    width: 570px;
+    height: 419px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+}
+
+.information__new-adidas {
+    background-image: url(../img/Photoball.png);
+    width: 570px;
+    height: 419px;
+    background-size: cover;
+    background-position: center -125px;
+    background-repeat: no-repeat;
+}
+
+.information__photo img {
+    width: 570px;
+    height: 419px;
+}
+
+.information__photo__content {
+    width: 100%;
+    height: 100%;
+    background: rgba(70, 45, 235, 0.49);
+}
+.red {
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 45, 188, 0.49);
+}
+.square{
+    width: 13px;
+    height: 13px; 
+    background: white;
+    margin-left: 38px;
+    margin-top: 273px;
+    
+}
+.information_name{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 71px;
+    color: #FFFFFF;
+    margin-top: 14px;
+}
+.information__plus img{
+    margin-left: 530px;
+    margin-top: 13px;
+    width: 44px;
+    height: 23px;
+}
+.information-text{
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 71px;
+    color: #FFFFFF;
+    margin-top: 14px;
+}
+.square1{
+    width: 13px;
+    height: 13px; 
+    background: white;
+}
+
