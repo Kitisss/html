@@ -34,13 +34,13 @@ body{
     color: #2A2D46 ;
     text-decoration: none;
 }
-.nav-link:lat-child{
-    margin-right: 0px;
+.nav-link:last-child{
+    margin-right: 0;
     align-items: center;
     
 }
 .nav-link:hover{
-    color: #3145FF ; 
+    color: #3145FF;
 }
 .logo__img{
     display: block;
@@ -60,13 +60,17 @@ body{
     text-decoration: none;
 }
 .phone{
-    margin-left: 61px;
     font-weight: bold;
-    margin-right: 34px;
+    margin-right: 98px;
     font-size: 13px;
 
 }
-
+.phone1{
+    font-weight: bold;
+    margin-right: 98px;
+    font-size: 13px;
+color: #FFFFFF;
+}
 .money{
     align-items: center;
     
@@ -79,10 +83,20 @@ body{
     font-weight: bold;
     font-size: 12px;
 }
+.prof-skills__title1{
+    color: #FFFFFF ;
+    font-weight: bold;
+    font-size: 12px;
+}
 .prof-skills__desc{
     color: #2A2D46 ;
     font-size: 12px;
     font-weight: 300; 
+}
+.prof-skills__desc1{
+    color: #FFFFFF ;
+    font-size: 12px;
+    font-weight: 300;
 }
 .money__title{
     margin-left: 15px;
@@ -199,7 +213,7 @@ body{
     font-weight: bold;
     color: #FFFFFF;
     text-decoration: none;
-    box-shadow: 0px 7px 35px  3px #EE5583;
+    box-shadow: 0 7px 35px  3px #EE5583;
 
 }
 .button-main:hover{
@@ -216,10 +230,7 @@ body{
     display: flex;
     height: 18px;
     align-items: center;
-    
     width:1292px;
-    
-    display: flex;
     justify-content: center;
     margin-bottom: 82px;
    
@@ -300,7 +311,7 @@ body{
 .information{
     display: flex;
     width: 1167px;
-    margin: 0 auto;
+    margin: 143px auto 0 auto;
     justify-content:space-between;
 }
 /*./img/photobascket.png"*/
@@ -371,4 +382,86 @@ body{
     height: 13px; 
     background: white;
 }
+.catalog_name{
+    font-size:25px;
+    font-weight: bolder;
+    margin-bottom: 51px;
+    margin-left: 42px;
+}
+.catalog{
+    height: 945px;
+    width: 1292px;
+    margin:96px auto 0 auto;
 
+}
+.goods-cart-up_-product{
+    margin-top: 30px;
+}
+.data{
+    width: 1292px;
+    margin:96px auto 0 auto;
+}
+.data-name{
+    margin-left: 42px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 64px;
+}
+.data-list{
+    gap: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data-information{
+    display: flex;
+    align-items: center;
+}
+.data-informatoin__number{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-right: 14px;
+    color: #2A2D46;
+}
+.data-information__text{
+    font-weight: 400;
+    font-size: 14px;
+    color: #2A2D46;
+}
+.footer{
+    background-color: #343A62;
+    margin-top: 96px;
+}
+.footer-container{
+    width: 1292px;
+    height: 276px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+.footer-container_logo{
+    display: flex;
+    align-items: center;
+    margin-right: 32px;
+}
+.logo__img{
+    margin-right: 12px;
+}
+.footer__arrow{
+    padding: 0 82px 0 82px;
+}
+.nav-link1{
+    margin-right: 32px;
+    color: #FFFFFF ;
+    text-decoration: none;
+}
+.nav-link1:last-child{
+    margin-right: 0;
+    align-items: center;
+
+}
+.nav-link1:hover{
+    color: #3145FF;
+}
