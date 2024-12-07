@@ -6,13 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
         button.addEventListener('click', (e) => {
             e.preventDefault();
             e.stopPropagation();
-            popup.className = (popup.className === "popup-container") ? "popup-container active" : "popup-container";
+            popup.classList.toggle('active');
         });
     });
 
     document.body.addEventListener('click', e => {
-        if (!e.target.classList.contains("open-popup-bg") && document.querySelector(".popup-container.active")) {
-            popup.className = "popup-container";
+        if (!e.target.classList.contains("open-popup-bg") && popup.classList.contains("active")) {
+            popup.classList.remove('active');
         }
     });
 });
