@@ -5,6 +5,7 @@
 }
 body{
     font-family: "Montserrat", sans-serif;
+    z-index: 0;
 }
 .header{
     display: flex;
@@ -63,7 +64,7 @@ body{
     font-weight: bold;
     margin-right: 98px;
     font-size: 13px;
-
+    margin-left: 61px;
 }
 .phone1{
     font-weight: bold;
@@ -73,10 +74,17 @@ color: #FFFFFF;
 }
 .money{
     align-items: center;
-    
+    position: relative;
     width: 22px;
     height: 23px;
     display: flex;
+}
+.money__contaner{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    z-index: 1;
 }
 .prof-skills__title{
     color: #3145FF ;
@@ -91,7 +99,7 @@ color: #FFFFFF;
 .prof-skills__desc{
     color: #2A2D46 ;
     font-size: 12px;
-    font-weight: 300; 
+    font-weight: 300;
 }
 .prof-skills__desc1{
     color: #FFFFFF ;
@@ -104,11 +112,12 @@ color: #FFFFFF;
     font-size: 12px;
     font-weight: bold;
     margin-right: 11px;
-    
+    z-index: -1;
 }
 .triangle__img{
     margin-top: -2px;
     display: block;
+    z-index: -1;
 }
 /*Главная страница*/
 .main{
@@ -134,23 +143,23 @@ color: #FFFFFF;
 .bg{
     background-color: rgba(49, 70, 255, 0.5); /* Синий полупрозрачный цвет */
     position: absolute;
-    top: 0; 
-    left: 0; 
-    width: 100%; 
-    height: 100%; 
-    pointer-events: none; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 .cross-image{
     /*position: absolute;*/
     /*top: 80%;*/
     /*left: -40%; */
     /*transform: translateY(-50%); */
-    width: 100%; 
-    height: auto; 
+    width: 100%;
+    height: auto;
 }
 .sneakers_info{
     display: flex;
-    
+
 }
 .textonimage {
     align-items: center; /* Вертикальное выравнивание элементов */
@@ -161,26 +170,26 @@ color: #FFFFFF;
     top: 55px;
     left: 390px;
     /*transform: translate(-50%, -50%); */
-    color: white; 
-    font-size: 17px; 
-    text-align:left; 
+    color: white;
+    font-size: 17px;
+    text-align:left;
     font-weight: bold;
-    
+
 }
 .textonimage h3 {
     padding-top: 6px;
-    color: white; 
+    color: white;
     font-size: 12px;
     font-weight: 400;
 }
 .textonimage h4 {
     padding-top: 6px;
-    color: white; 
+    color: white;
     font-size: 12px;
     font-weight:bold;
 }
 .Rectangle{
-    
+
     top: 150px;
     left: 382px;
     transform: translateY(-50%);
@@ -190,7 +199,7 @@ color: #FFFFFF;
     margin-left: 84px;
 }
 .main-text{
-    
+
     margin-top: 0;
     margin-bottom: 25px;
     font-weight: bolder;
@@ -233,21 +242,21 @@ color: #FFFFFF;
     width:1292px;
     justify-content: center;
     margin-bottom: 82px;
-   
+
 }
 .goods-name{
     margin-right: 42px;
     font-weight:900;
     font-size: 25px;
     color: #2A2D46 ;
-    
+
 }
 .goods-nav{
     font-weight: 400;
     font-size: 12px;
     color: #2A2D46 ;
     align-items: center;
-    
+
 }
 .goods-nav__link{
     margin-right: 32px;
@@ -267,18 +276,18 @@ color: #FFFFFF;
 
 .goods-carts{
     /*margin-left:454px;*/
-    
+
     vertical-align: middle;
     display: flex;
     text-align: center;
     gap:30px;
     justify-content: space-around;
-    
+
 }
 .goods-carts h1{
     font-size: 16px;
     font-weight: bold;
-    
+
 }
 .goods-carts h2{
     font-size: 12px;
@@ -291,7 +300,7 @@ color: #FFFFFF;
     text-decoration: line-through;
 }
 .goods-carts__ball-treals{
-    
+
     display: flex;
     align-items: center;
 }
@@ -322,7 +331,7 @@ color: #FFFFFF;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-   
+
 }
 
 .information__new-adidas {
@@ -351,11 +360,11 @@ color: #FFFFFF;
 }
 .square{
     width: 13px;
-    height: 13px; 
+    height: 13px;
     background: white;
     margin-left: 38px;
     margin-top: 273px;
-    
+
 }
 .information_name{
     font-size: 20px;
@@ -379,7 +388,7 @@ color: #FFFFFF;
 }
 .square1{
     width: 13px;
-    height: 13px; 
+    height: 13px;
     background: white;
 }
 .catalog_name{
@@ -464,4 +473,48 @@ color: #FFFFFF;
 }
 .nav-link1:hover{
     color: #3145FF;
+}
+
+.popup {
+    position: absolute;
+    top: 40px;
+    right: 55px;
+    z-index: 1000;
+    transition: 0.5s all;
+}
+
+.popup.active .popup-bg {
+    opacity: 1;
+}
+
+.popup-container {
+    position: absolute;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    width: 186px;
+    height: 84px;
+    z-index: -1;
+    transition: 0.5s;
+    transform: scale(0);
+}
+
+.popup-container.active {
+    transition: .5s;
+    transform: scale(1);
+}
+
+.popup_inf{
+    font-size: 12px;
+    font-weight: 400;
+    color: #2A2D46;
+    padding: 13px 65px 13px;
+    justify-content: center;
+
+}
+
+.popup_inf:hover{
+    color: #FFFFFF;
+    background-color: #EB2D66;
 }

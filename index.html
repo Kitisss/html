@@ -21,7 +21,6 @@
             <img src="./img/Логотип.svg" alt="Логотип">
         </div>
         <div class="logo">
-
             <div class="prof-skills__title">БАСКЕТБОЛЕР</div>
             <div class="prof-skills__desc">Магазин баскетбольных товаров</div>
         </div>
@@ -37,17 +36,30 @@
         </nav>
 
         <div class="phone">8(908)45-32-7798</div>
+
         <a class ="button" href="#">
             <div class="text_button">Заказать звонок</div>
-
         </a>
+
         <div class="money">
             <div class="bag__img">
                 <img src="./img/Cart.svg" alt="Корзина">
             </div>
-            <div class="money__title">3243руб.</div>
-            <div class="triangle__img">
-                <img src="./img/Vector 1.svg" alt="">
+            <a class="money__contaner open-popup-bg" href="#">
+                <div class="money__title open-popup-bg">3243руб.</div>
+                <div class="triangle__img open-popup-bg">
+                    <img src="./img/Vector 1.svg" alt="">
+                </div>
+            </a>
+            <div class="popup">
+                <div class="popup-container">
+                    <div class="popup_inf">
+                        Профиль
+                    </div>
+                    <div class="popup_inf">
+                        Корзина
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -68,7 +80,7 @@
 
             <div style="width: 615px; height: 369px; position: absolute" class="bg"></div>
 
-            <div style="z-index: 100; width: 615px; height: 369px;" class="sneakers_info">
+            <div style="z-index: 10; width: 615px; height: 369px;" class="sneakers_info">
                 <img style="z-index: 100; transform: translateX(-190px) translateY(100px); position: absolute" src="./img/Кроссы.png" alt="Кроссовки" class="cross-image">
                 <div style="transform: translateX(360px)" class="textonimage">
                     <div class="square1" style="transform: translateX(-16px) translateY(10px);"></div>
@@ -85,9 +97,7 @@
     </div>
 
     <div class="goods">
-
         <div class="goods-header">
-
             <div class="goods-name">Горячие поступления</div>
             <nav class="good-nav">
                 <a class="goods-nav__link" href="#">Все</a>
@@ -380,5 +390,6 @@
         </div>
     </div>
 </main>
+<script src="script.js" defer></script>
 </body>
 </html>
